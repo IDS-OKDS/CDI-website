@@ -1,0 +1,5 @@
+name = CDI 
+description = This is a sub-theme of theme Radix, by KSS for CDI
+core = 7.x
+base theme = radix
+stylesheets[all][]     = assets/stylesheets/cdi-style.css

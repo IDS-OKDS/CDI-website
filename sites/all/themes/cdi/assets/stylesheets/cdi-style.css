@@ -32,6 +32,7 @@ a:hover {
 }
 
 #logo {
+	margin:8px 0 8px 0;
 	text-indent:-5000px;
 	font-size:0;
 	line-height:0;
@@ -56,6 +57,9 @@ ul.navbar-nav {
 /* Reponsive Media overrides */
 
 @media (min-width: 768px) {
+	#logo {
+		margin:0;
+	}	
 	.not-logged-in .navbar-default {
 		margin-top:20px;
 	}

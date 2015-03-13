@@ -71,9 +71,6 @@ ul.navbar-nav {
 	}
 	
 	ul.navbar-nav li.first a{
-		-webkit-border-radius: 5px;
-		-moz-border-radius: 5px;
-		border-radius: 5px;
 		-webkit-border-top-left-radius: 5px;
 		-webkit-border-bottom-left-radius: 5px;
 		-moz-border-radius-topleft: 5px;

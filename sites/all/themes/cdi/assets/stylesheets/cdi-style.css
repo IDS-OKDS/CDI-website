@@ -94,5 +94,22 @@ ul.navbar-nav {
 	}
 }
 @media (min-width: 1200px) {
+	
+}
 
+
+.view-id-people .views-row {
+    max-width: 25%;
+    width: 25%;
+    height: auto;
+    float: left;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    min-height:330px;
+}
+
+
+.view-id-people .views-row img.panopoly-image-quarter {
+    max-width: 100%;
+    width: 100%%;
 }

@@ -1,0 +1,45 @@
+/* Reponsive Media overrides */
+
+@media (min-width: 768px) {
+	
+	.view-id-people .views-row {
+	    max-width: 24%;
+	    width: 24%;
+	}	
+	
+	#logo {
+		margin:0;
+	}	
+	.not-logged-in .navbar-default {
+		margin-top:20px;
+	}
+	
+	ul.navbar-nav {
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+	
+	ul.navbar-nav li.first a{
+		-webkit-border-top-left-radius: 5px;
+		-webkit-border-bottom-left-radius: 5px;
+		-moz-border-radius-topleft: 5px;
+		-moz-border-radius-bottomleft: 5px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+	
+	ul.navbar-nav li.last a{
+		-webkit-border-top-right-radius: 5px;
+		-webkit-border-bottom-right-radius: 5px;
+		-moz-border-radius-topright: 5px;
+		-moz-border-radius-bottomright: 5px;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+	
+	.node-person .field-name-field-photo {
+		float: left;
+		padding: 0 15px 5px 0;
+	}
+}

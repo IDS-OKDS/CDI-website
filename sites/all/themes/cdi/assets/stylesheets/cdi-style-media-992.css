@@ -1,0 +1,7 @@
+/* Reponsive Media overrides */
+
+@media (min-width: 992px) {
+	ul.navbar-nav {
+		margin-left: 40px;
+	}
+}

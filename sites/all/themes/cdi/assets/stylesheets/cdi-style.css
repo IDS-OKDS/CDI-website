@@ -159,6 +159,10 @@ div#navbar-collapse {
 	border-color: transparent;
 }
 
-#block-responsive-dropdown-menus-main-menu ul ul {
-	display:none;
+/* hide sub-nav for mobiles */
+.responsive-menu .sub-menu,
+.responsive-menu .sub-menu.active {
+	max-height: 0;
+	overflow: hidden;
 }
+

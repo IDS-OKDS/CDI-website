@@ -31,11 +31,14 @@
 	      <div class="collapse navbar-collapse" id="navbar-collapse">
 	        <?php if ($main_menu_expanded): ?>
 	            <?php 
-	            $menu_output = drupal_render($main_menu_expanded);
+	           /* $menu_output = drupal_render($main_menu_expanded);
 	              $menu_output = str_replace( "class=\"menu nav\"" , "class=\"menu nav navbar-nav\"" , $menu_output );
 	            
-	            print $menu_output;
+	            print $menu_output;*/
 	             ?>
+	        <?php endif; ?>
+	        <?php if($page['header_navigation']): ?>
+	         	<div id="header-navigation"><?php print render($page['header_navigation']); ?> </div>
 	        <?php endif; ?>
 	        <?php if ($search_form): ?>
 	          <?php print $search_form; ?>

@@ -105,11 +105,37 @@ ul.navbar-nav {
     float: left;
     margin-right: 0.5em;
     margin-bottom: 0.5em;
-    min-height:330px;
+    min-height:365px;
 }
 
 
 .view-id-people .views-row img.panopoly-image-quarter {
     max-width: 100%;
     width: 100%%;
+}
+
+.view-id-people .views-field-field-photo {
+	min-height: 290px;
+	background-color: #B2ABA8;
+}
+
+.view-id-people .views-field-field-photo img.panopoly-image-quarter {
+	margin-top:0;
+}
+
+.view-id-people .views-field-field-role {
+	background-color: #F5F5F5;
+	min-height:50px;
+}
+
+.view-id-people .views-field-field-role .field-content {
+	padding:3px 10px;
+}
+
+.view-id-people .views-field-title {
+	background-color: #F5F5F5;
+}
+
+.view-id-people .views-field-title .field-content {
+	padding:3px 10px;
 }

@@ -6,3 +6,7 @@ stylesheets[all][]     = assets/stylesheets/cdi-style.css
 stylesheets[all][]     = assets/stylesheets/cdi-style-media-768.css
 stylesheets[all][]     = assets/stylesheets/cdi-style-media-992.css
 stylesheets[all][]     = assets/stylesheets/cdi-style-media-1200.css
+
+; Regions
+regions[content] = Content
+regions[header_navigation] = Header Navigaion

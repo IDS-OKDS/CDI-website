@@ -1,6 +1,8 @@
 /**
 * Menu toggle base styling
 */
+
+/* Joe McP -- adapted for CDI -- */
 .menu-toggle {
 	border-color: #ddd;
 	position: relative;
@@ -19,6 +21,7 @@
 .menu-toggle .toggle-help {
 	display:none;
 }
+/* Joe McP -- END adapted for CDI -- */
 
 .menu-toggle .toggle-help {
     position: absolute;
@@ -86,5 +89,58 @@
   /* Chances are your submenu should stack...if not override this. */
   .responsive-menu .sub-menu li {
     display: block;
+  }
+  
+  /* Joe McP -- additions for CDI -- */
+  .responsive-menu li {
+  	display: inline-block;
+  }
+  
+  .responsive-menu li a {
+  	padding:5px 10px;
+  	display:block
+  }
+  
+  .responsive-menu li li {
+  	display: block;
+  }
+  
+  .responsive-menu li li a {
+  	padding:5px 10px;
+  	display:block;
+  }
+  
+  .responsive-menu li li span.nolink {
+   	padding:5px 10px;
+  	display:block;
+  }
+  
+  .responsive-menu ul.tier-two, .responsive-menu ul.tier-three {
+  	padding:0;
+  	margin:0;
+  	width:350px;
+  }
+  
+  .responsive-menu ul.tier-two.active {
+  	border-left:1px solid #ddd;
+  	border-right:1px solid #ddd;
+  	border-bottom:1px solid #ddd;
+  }
+  
+   .responsive-menu  ul.tier-three, .responsive-menu  ul.tier-three li {
+   clear:both;
+   }
+  
+  .responsive-menu ul.tier-two li {
+  	display:inline-block; 
+  	margin-right:20px;
+  }
+
+  .responsive-menu ul.tier-two li li {
+  	display:block;
+  }
+  
+  ul#main-menu {
+  	margin:20px 0 0 120px;
   }
 }

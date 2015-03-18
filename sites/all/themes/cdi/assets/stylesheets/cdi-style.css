@@ -136,3 +136,16 @@ ul.navbar-nav {
 	float: left;
 	padding: 0 15px 5px 0;
 }
+
+
+.dropdown-menu > li > span.nolink {
+	display: block;
+	padding: 3px 20px;
+	clear: both;
+	font-weight: normal;
+	line-height: 1.428571429;
+	color: #333333;
+	white-space: nowrap;
+	text-transform:uppercase;
+	font-size:0.85em;
+}

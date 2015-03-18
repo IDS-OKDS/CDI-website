@@ -149,3 +149,16 @@ ul.navbar-nav {
 	text-transform:uppercase;
 	font-size:0.85em;
 }
+
+div#navbar-collapse {
+ 	display: block; 
+	visibility: visible; 
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border-color: transparent;
+}
+
+#block-responsive-dropdown-menus-main-menu ul ul {
+	display:none;
+}

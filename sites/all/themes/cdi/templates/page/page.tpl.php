@@ -27,18 +27,21 @@
       </div> <!-- /.navbar-header -->
 
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <?php if ($main_menu_expanded): ?>
-            <?php 
-            $menu_output = drupal_render($main_menu_expanded);
-              $menu_output = str_replace( "class=\"menu nav\"" , "class=\"menu nav navbar-nav\"" , $menu_output );
-            print $menu_output;
-             ?>
-        <?php endif; ?>
-        <?php if ($search_form): ?>
-          <?php print $search_form; ?>
-        <?php endif; ?>
-      </div><!-- /.navbar-collapse -->
+      <div id="main-menu">
+	      <div class="collapse navbar-collapse" id="navbar-collapse">
+	        <?php if ($main_menu_expanded): ?>
+	            <?php 
+	            $menu_output = drupal_render($main_menu_expanded);
+	              $menu_output = str_replace( "class=\"menu nav\"" , "class=\"menu nav navbar-nav\"" , $menu_output );
+	            
+	            print $menu_output;
+	             ?>
+	        <?php endif; ?>
+	        <?php if ($search_form): ?>
+	          <?php print $search_form; ?>
+	        <?php endif; ?>
+	      </div><!-- /.navbar-collapse -->
+      </div>
     </nav><!-- /.navbar -->
   </div> <!-- /.container -->
 </header>

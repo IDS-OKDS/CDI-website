@@ -191,7 +191,7 @@ div#navbar-collapse {
 }
 
 
-.node-type-blog .pane-content .view-mode-full .node-title {
+.pane-node .view-mode-full > h2 {
 	display:none;
 }
 

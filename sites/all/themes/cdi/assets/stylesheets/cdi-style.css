@@ -7,6 +7,9 @@
 *
 */
 
+h1, h2, h3 { font-family: "HouschkaPro-Bold"; }
+h4 { font-family: "HouschkaPro-Medium"; }
+
 a {
 	color: #aca902;
 }

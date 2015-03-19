@@ -1,0 +1,16 @@
+/* Embed */
+@font-face {
+  font-family: 'HouschkaPro-ExtraBold';
+  src: url('../fonts/236E30_0_0.eot');
+  src: url('../fonts/236E30_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/236E30_0_0.woff') format('woff'), url('../fonts/236E30_0_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'HouschkaPro-Bold';
+  src: url('../fonts/236E30_1_0.eot');
+  src: url('../fonts/236E30_1_0.eot?#iefix') format('embedded-opentype'), url('../fonts/236E30_1_0.woff') format('woff'), url('../fonts/236E30_1_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'HouschkaPro-Medium';
+  src: url('../fonts/236E30_2_0.eot');
+  src: url('../fonts/236E30_2_0.eot?#iefix') format('embedded-opentype'), url('../fonts/236E30_2_0.woff') format('woff'), url('../fonts/236E30_2_0.ttf') format('truetype');
+}

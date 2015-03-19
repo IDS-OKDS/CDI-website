@@ -122,9 +122,9 @@
   }
   
   .responsive-menu ul.tier-two.active {
-  	border-left:1px solid #ddd;
+  /*	border-left:1px solid #ddd;
   	border-right:1px solid #ddd;
-  	border-bottom:1px solid #ddd;
+  	border-bottom:1px solid #ddd; */
   }
   
    .responsive-menu  ul.tier-three, .responsive-menu  ul.tier-three li {

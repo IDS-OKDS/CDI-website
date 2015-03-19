@@ -188,3 +188,8 @@ div#navbar-collapse {
 }
 
 
+.node-type-blog .pane-content .view-mode-full .node-title {
+	display:none;
+}
+
+

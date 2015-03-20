@@ -195,4 +195,9 @@ div#navbar-collapse {
 	display:none;
 }
 
+.pane-node .node-event .field-name-field-date {
+	font-weight:bold;
+	margin-bottom:1em;
+} 
+
 

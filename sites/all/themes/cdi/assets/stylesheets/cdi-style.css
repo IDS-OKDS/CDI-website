@@ -216,3 +216,14 @@ div#navbar-collapse {
 	border-bottom:1px solid #ddd;
 }
 
+.view-latest-news-with-thumbs .views-field-field-featured-image {
+	float:left; 
+	margin:0 10px 5px 0;
+}
+
+.view-latest-blog-posts-with-thumbs .views-row,
+.view-latest-news-with-thumbs .views-row {
+	clear:both;
+	margin-bottom:1em;
+	overflow:hidden;
+} 

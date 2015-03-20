@@ -226,4 +226,19 @@ div#navbar-collapse {
 	clear:both;
 	margin-bottom:1em;
 	overflow:hidden;
-} 
+}
+
+.view-id-partners .views-row {
+	clear:both;
+	margin-bottom:1em;
+	overflow:hidden;
+}
+
+.view-id-partners .views-field-field-logo {
+	float:left; 
+	margin:0 10px 5px 0;
+}
+
+.view-id-partners .views-field-title {
+	padding-top:1.5em;
+}

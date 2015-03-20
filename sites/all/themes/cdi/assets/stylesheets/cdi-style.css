@@ -198,6 +198,21 @@ div#navbar-collapse {
 .pane-node .node-event .field-name-field-date {
 	font-weight:bold;
 	margin-bottom:1em;
-} 
+}
 
+.panel-panel .panel-panel-inner {
+	background-color:#eee;
+	margin: 0.5em 0;
+	padding: 0.5em 1em;
+}
+
+.front .radix-layouts-middle {
+	display:none;
+}
+
+.front h4.pane-title {
+	font-weight: bold;
+	font-size: 1em;
+	border-bottom:1px solid #ddd;
+}
 

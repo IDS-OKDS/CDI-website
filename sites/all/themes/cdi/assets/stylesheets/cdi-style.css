@@ -242,3 +242,7 @@ div#navbar-collapse {
 .view-id-partners .views-field-title {
 	padding-top:1.5em;
 }
+
+.view-content .view-mode-teaser > h2 {
+	font-size:1em;
+}

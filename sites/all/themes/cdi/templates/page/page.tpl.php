@@ -46,6 +46,13 @@
 	        <?php endif; ?>
 	      </div><!-- /.navbar-collapse -->
       </div>
+      
+        <?php if ($site_slogan): ?>
+          <div id="site-slogan">
+            <?php print $site_slogan; ?>
+          </div>
+        <?php endif; ?>      
+      
     </nav><!-- /.navbar -->
   </div> <!-- /.container -->
 </header>

@@ -266,3 +266,8 @@ div#navbar-collapse {
 .sf-sub-indicator {
 	background-image:none;
 }
+
+#superfish-1 .sf-megamenu {
+	background-color: #fff;
+	border:1px solid #eee;
+}

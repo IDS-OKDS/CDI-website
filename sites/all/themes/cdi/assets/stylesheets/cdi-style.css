@@ -246,3 +246,8 @@ div#navbar-collapse {
 .view-content .view-mode-teaser > h2 {
 	font-size:1em;
 }
+
+.pane-taxonomy-term .field-name-field-long-name .field-item {
+	font-family: "HouschkaPro-Bold";
+	font-size: 24px
+}

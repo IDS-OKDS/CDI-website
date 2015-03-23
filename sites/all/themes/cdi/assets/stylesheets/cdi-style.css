@@ -271,3 +271,24 @@ div#navbar-collapse {
 	background-color: #fff;
 	border:1px solid #eee;
 }
+
+.view-themes-landing {
+	overflow:hidden;
+}
+
+.view-themes-landing .views-row {
+	width: 49%;
+	float:left;
+	margin-right:1%;
+	display:inline;
+	border:1px solid #ddd;
+	margin-bottom:1em;
+}
+
+.view-themes-landing .views-row-odd {
+	clear:left;
+}
+
+.view-themes-landing .views-row .views-field {
+	margin:10px;
+}

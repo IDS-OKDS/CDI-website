@@ -251,3 +251,18 @@ div#navbar-collapse {
 	font-family: "HouschkaPro-Bold";
 	font-size: 24px
 }
+
+/* Superfish main menu navigation overrides */
+
+.sf-menu.sf-horizontal.sf-shadow ul, .sf-menu.sf-vertical.sf-shadow ul, .sf-menu.sf-navbar.sf-shadow ul ul {
+	background-image:none;
+}
+.sf-menu li a,
+.sf-menu li span.nolink {
+	padding:5px 10px;
+	display:block;
+}
+
+.sf-sub-indicator {
+	background-image:none;
+}

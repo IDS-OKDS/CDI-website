@@ -292,3 +292,17 @@ div#navbar-collapse {
 .view-themes-landing .views-row .views-field {
 	margin:10px;
 }
+
+#main-menu {
+	clear:both;
+}
+
+.navbar-header {
+	width:100%;
+}
+#site-slogan {
+	float:right;
+}
+.navbar-right {
+	clear:right;
+}

@@ -22,9 +22,21 @@
           <span class="icon-bar"></span>
         </button> 
         -->
+        <div id="navbar-header-col1" class="navbar-header-col">
         <a href="<?php print $front_page; ?>" id="logo" class="navbar-brand">
           <?php print $site_name; ?>
         </a>
+        </div>
+        <div id="navbar-header-col2" class="navbar-header-col">
+        <?php if ($site_slogan): ?>
+          <div id="site-slogan">
+            <?php print $site_slogan; ?>
+          </div>
+        <?php endif; ?>  
+        <?php if ($search_form): ?>
+          <?php print $search_form; ?>
+        <?php endif; ?>
+        </div>
       </div> <!-- /.navbar-header -->
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -33,17 +45,8 @@
 	        <?php if($page['header_navigation']): ?>
 	         	<div id="header-navigation"><?php print render($page['header_navigation']); ?> </div>
 	        <?php endif; ?>
-	        <?php if ($search_form): ?>
-	          <?php print $search_form; ?>
-	        <?php endif; ?>
 	      </div><!-- /.navbar-collapse -->
-      </div>
-      
-        <?php if ($site_slogan): ?>
-          <div id="site-slogan">
-            <?php print $site_slogan; ?>
-          </div>
-        <?php endif; ?>      
+      </div>    
       
     </nav><!-- /.navbar -->
   </div> <!-- /.container -->

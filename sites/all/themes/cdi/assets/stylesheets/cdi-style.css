@@ -306,3 +306,8 @@ div#navbar-collapse {
 .navbar-right {
 	clear:right;
 }
+
+#footer-region {
+	background-color:#000;
+}
+

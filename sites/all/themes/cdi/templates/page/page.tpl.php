@@ -97,6 +97,6 @@
     <small class="pull-right"><a href="#"><?php print t('Back to Top'); ?></a></small>
   </div>
   <?php if($page['footer']): ?>
-    <div id="footer-region"><?php print render($page['footer']); ?> </div>
+    <div id="footer-region" class="container"><?php print render($page['footer']); ?> </div>
   <?php endif; ?>
 </footer>

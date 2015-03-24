@@ -90,10 +90,13 @@
 </div> <!-- /#main-wrapper -->
 
 <footer id="footer" class="footer" role="footer">
-  <div class="container">
+  <div id="content-page-base" class="container">
     <?php if ($copyright): ?>
       <small class="copyright pull-left"><?php print $copyright; ?></small>
     <?php endif; ?>
     <small class="pull-right"><a href="#"><?php print t('Back to Top'); ?></a></small>
   </div>
+  <?php if($page['footer']): ?>
+    <div id="footer-region"><?php print render($page['footer']); ?> </div>
+  <?php endif; ?>
 </footer>

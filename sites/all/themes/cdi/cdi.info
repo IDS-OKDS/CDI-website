@@ -13,3 +13,4 @@ stylesheets[all][]     = assets/stylesheets/cdi-design.css
 ; Regions
 regions[content] = Content
 regions[header_navigation] = Header Navigaion
+regions[footer] = Footer

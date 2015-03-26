@@ -50,14 +50,21 @@ a:hover {
 }
 
 #logo {
-	margin:8px 0 8px 0;
-	text-indent:-5000px;
-	font-size:0;
-	line-height:0;
+	font-family: "HouschkaPro-Bold";
+	margin:0
 	display:block;
-	width:110px;
-	height:71px;
+	font-size: 1.4em;
+	padding: 15px 0 75px 130px;
 	background:url('../../logo.png') no-repeat top left;
+	overflow:hidden;
+}
+
+#logo #site-slogan {
+	font-family: "HouschkaPro-Medium"; 
+	font-size: 0.75em;
+	display:block;
+	font-style:italic;
+	margin-top:0.1em
 }
 
 ul.navbar-nav {
@@ -299,9 +306,7 @@ div#navbar-collapse {
 
 .navbar-header {
 	width:100%;
-}
-#site-slogan {
-	float:right;
+	overflow:hidden;
 }
 .navbar-right {
 	clear:right;

@@ -17,4 +17,12 @@
 		width:50%;
 	}
 	
+	#logo {
+		font-size: 2em;
+	}
+	
+	#logo #site-slogan {
+		margin-top:0.25em;
+	}
+	
 }

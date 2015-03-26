@@ -10,6 +10,9 @@ stylesheets[all][]     = assets/stylesheets/cdi-style-media-1200.css
 stylesheets[all][]     = assets/stylesheets/cdi-fonts.css
 stylesheets[all][]     = assets/stylesheets/cdi-design.css
 
+; Javascript
+scripts[] = assets/javascripts/compact_forms.js
+
 ; Regions
 regions[content] = Content
 regions[header_navigation] = Header Navigaion

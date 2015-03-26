@@ -316,3 +316,17 @@ div#navbar-collapse {
 	background-color:#000;
 }
 
+form#views-exposed-form-panopoly-events-list-events .views-exposed-form .views-exposed-widget,
+form#views-exposed-form-panopoly-publications-list-publications .views-exposed-form .views-exposed-widget  {
+	float:none;
+}
+
+form#views-exposed-form-panopoly-events-list-events .form-submit,
+form#views-exposed-form-panopoly-publications-list-publications .form-submit  {
+	display:none;
+}
+
+div.pane-bundle-video .media-vimeo-video, div.pane-bundle-video .media-youtube-video {
+	padding-top:0;
+}
+

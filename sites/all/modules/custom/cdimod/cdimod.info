@@ -1,5 +1,5 @@
 name = CDI Module
-description = Mod
+description = Module for bespoke CDI customisations
 core = 7.x
 package = CDI
 version = "7.x-1.0"

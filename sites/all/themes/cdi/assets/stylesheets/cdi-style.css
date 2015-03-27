@@ -340,15 +340,12 @@ div.pane-bundle-video .media-vimeo-video, div.pane-bundle-video .media-youtube-v
 }
 
 #block-views-funder-logos-block {
-	width:45%;
+	width:50%;
 	float:left;
 }
 
-.region-footer .views-field-field-alternative-logo .field-content  {
-	background-color:#fff;	
-}
-
-.region-footer .views-field-field-alternative-logo .field-content img {
-	background-color:#fff;
+#footer-region img.panopoly-image-quarter {
+	width:18%;
+	max-width:18%;
 }
 

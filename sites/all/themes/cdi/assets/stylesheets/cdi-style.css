@@ -197,7 +197,8 @@ div#navbar-collapse {
 	background-clip: none;
 }
 
-
+/* Couldn't find a way to hide node/pane titles in config or remove in preprocessor so had to do in css */
+.pane-node-content .view-mode-full > h2, 
 .pane-node .view-mode-full > h2 {
 	display:none;
 }
@@ -341,5 +342,13 @@ div.pane-bundle-video .media-vimeo-video, div.pane-bundle-video .media-youtube-v
 #block-views-funder-logos-block {
 	width:45%;
 	float:left;
+}
+
+.region-footer .views-field-field-alternative-logo .field-content  {
+	background-color:#fff;	
+}
+
+.region-footer .views-field-field-alternative-logo .field-content img {
+	background-color:#fff;
 }
 

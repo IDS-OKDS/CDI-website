@@ -2,27 +2,27 @@
 
 /**
  * @file
- * Definition of the 'cdi publication' panel style.
+ * Definition of the 'cdi video' panel style.
  */
 
 $plugin = array(
-  'title' => t('CDI Publication'),
-  'description' => t('Wraps panes Publication style.'),
-  'render pane' => 'cdimod_publication_render_pane',
-  'render region' => 'cdimod_publication_render_region',
+  'title' => t('CDI Video'),
+  'description' => t('Wraps panes Video style.'),
+  'render pane' => 'cdimod_video_render_pane',
+  'render region' => 'cdimod_video_render_region',
   'weight' => -10,
 );
 
 /**
  * Theme function for the pane style.
  */
-function theme_cdimod_publication_render_pane($vars) {
+function theme_cdimod_video_render_pane($vars) {
   $content = $vars['content'];
   $pane = $vars['pane'];
   $display = $vars['display'];
   $plugin = $vars['style'];
   
-  $content->css_class .= ' cdi-style-publication';
+  $content->css_class .= ' cdi-style-video';
   
   // if the style is gone or has no theme of its own, just display the output.
   return theme('panels_pane', array('content' => $content, 'pane' => $pane, 'display' => $display));
@@ -31,14 +31,14 @@ function theme_cdimod_publication_render_pane($vars) {
 /**
  * Theme function for the region style.
  */
-function theme_cdimod_publication_render_region($vars) {
+function theme_cdimod_video_render_region($vars) {
   $display = $vars['display'];
   $region_id = $vars['region_id'];
   $panes = $vars['panes'];
   $settings = $vars['settings'];
 
   $output = '';
-  $output .= '<div class="region region-' . $vars['region_id'] . ' cdi-style-publication">';
+  $output .= '<div class="region region-' . $vars['region_id'] . ' cdi-style-video">';
   $output .= implode('<div class="panel-separator"></div>', $panes);
   $output .= '</div>';
   return $output;

@@ -25,6 +25,8 @@ Warm grey: #826e6f
   color: #826e6f;
   background-color: inherit;
 }
+.nav-pills .nolink {display: block; background-color: #826e6f; color: #fff; padding: 8px; font-family: "HouschkaPro-Bold"; }
+.pane-menu-tree .dropdown-menu { z-index: 400; }
 .view-themes-landing .views-row {
   width: 50%; 
   padding: 0; margin: 0;
@@ -44,9 +46,9 @@ Warm grey: #826e6f
 }
 .pane-bundle-spotlight .panopoly-spotlight-info {
     background-color: #826e6f;
-    color: #ffffff; font-size: 15px;
+    color: #ffffff; font-size: 18px;
     opacity: 0.9;
-    padding: 0.7em;
+    padding: 1em 0.7em;
 }
 .pane-bundle-spotlight .panopoly-spotlight-label {
     padding: 6px 8px;
@@ -64,7 +66,7 @@ body { background-color: #eee; font-size: 14px; padding-top: 0px !important;}
 #header { background-color: #fff; }
 #main-menu { background-color: #8e9300; }
 .panel-pane { background-color: #fff; }
-#breadcrumb { display: none; }
+
 .not-front #page-header { padding: 10px 10px 0px 10px; background-color: #fff; }
 .navbar-collapse { padding: 0; }
 /.panel-layout-radix_selby .radix-layouts-contentcolumn1 { padding: 10px; }
@@ -86,9 +88,13 @@ x.pane-content { padding: 10px; }
 	font-size: 16px;
 }
 .pane-fpid-4 p span { color: #737800; }
-.pane-fpid-4.panel-pane { background-color: #eee; }
+.pane-fpid-4.panel-pane, 
+.pane-fpid-4.panel-pane .pane-content
+ { background-color: #eee !important; }
+
 
 .pane-webform-client-block-174 .pane-content,
+.radix-layouts-content .pane-node,
 .radix-layouts-content .pane-bundle-text,
 .radix-layouts-content .pane-fieldable-panels-pane,
 .radix-layouts-content .pane-taxonomy-term,
@@ -98,6 +104,8 @@ x.pane-content { padding: 10px; }
 .radix-layouts-contentcolumn1 .pane-entity-field,
 .radix-layouts-contentcolumn2 .pane-entity-field,
 .radix-layouts-contentfooter .pane-entity-field {padding: 10px; background-color: #fff;}
+
+XXX.panel-pane:not(.pane-views-panes):not(.pane-main-menu) .pane-content {padding: 10px; background-color: #fff;}
 
 h4.pane-title { background-color: #662673; padding: 10px 8px 12px 8px; border-left: 5px solid #737800; color: #fff; font-family: "HouschkaPro-Bold"; font-size: 1.2em; margin: 10px 0 0 0; 
 background-repeat: no-repeat; background-size: auto 100%; background-position: 100% 0; }
@@ -109,6 +117,16 @@ background-repeat: no-repeat; background-size: auto 100%; background-position: 1
 .pane-panopoly-blogs-list-blog-posts h4 { background-image: url('../images/icons/blog_white.png') } 
 .pane-panopoly-events-list-events h4 { background-image: url('../images/icons/event_white.png') } 
 
+
+h1.title { padding-right: 44px; background-repeat: no-repeat; xbackground-size: auto 100%; background-position: 100% 0; }
+body.node-type-publication h1.title { background-image: url('../images/icons/publication_white.png') } 
+body.node-type-event h1.title { background-image: url('../images/icons/event_white.png') } 
+body.node-type-blog h1.title { background-image: url('../images/icons/blog_white.png') } 
+body.node-type-panopoly-news-article h1.title { background-image: url('../images/icons/news_white.png') } 
+
+
+
+
 .fluid-width-video-wrapper { position: unset !important; }
 .pane-fpid-5 .pane-content { padding: 10px; }
 .pane-fpid-3 .pane-content { padding: 10px; }
@@ -117,15 +135,15 @@ background-repeat: no-repeat; background-size: auto 100%; background-position: 1
 
 /*.view-display-id-list_news_articles*/  
 
+.view-id-panopoly_projects .views-row,
 .view-id-latest_publications .views-row,
-.view-id-projects .views-row,
 .view-id-panopoly_publications .views-row,
 .view-id-panopoly_events .views-row,
 .view-id-panopoly_blogs .views-row,
 .view-id-panopoly_news .views-row {
 	padding: 5px 10px 8px 10px;
 }
-.view-id-projects .views-row:hover,
+.view-id-panopoly_projects .views-row:hover,
 .view-id-latest_publications .views-row:hover,
 .view-id-panopoly_publications .views-row:hover,
 .view-id-panopoly_events .views-row:hover,
@@ -143,10 +161,8 @@ background-repeat: no-repeat; background-size: auto 100%; background-position: 1
 }
 
 
-
-
 /* Menus */
-#superfish-1 { width: 100%; display: block; }
+#superfish-1 { width: 100%; display: block; z-index: 999;}
 #superfish-1 > li > a { border-right: 1px solid #9c9b89 !important; }
 #superfish-1 a {
 	color: #fff; background-color: #737800; padding: 10px 10px; 
@@ -160,6 +176,7 @@ ul#superfish-1 > li > a.sf-depth-1:hover { background-color: #662673; text-decor
 ul#superfish-1 > li.active-trail > a.sf-depth-1 {
 	background-color: #662673;
 }
+ul#superfish-1 .nolink { background-color: #826e6f; color: #fff; font-family: "HouschkaPro-Bold";	}
 
 .pane-main-menu {}
 .dropdown-menu > li > a,

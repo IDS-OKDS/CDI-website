@@ -1,0 +1,13 @@
+<?php
+/**
+ * @file
+ * Module code for CDI customisations:
+ * 1. Style plugins for panel panes etc..
+ */
+
+/**
+ * Implements hook_ctools_plugin_directory().
+ */
+function cdimod_ctools_plugin_directory($module, $plugin) {
+  return 'plugins/' . $plugin;
+}

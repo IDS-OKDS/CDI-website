@@ -330,3 +330,16 @@ div.pane-bundle-video .media-vimeo-video, div.pane-bundle-video .media-youtube-v
 	padding-top:0;
 }
 
+.page-taxonomy-term .pane-taxonomy-term .vocabulary-theme .field-name-field-featured-image {
+	float:right;
+}
+
+.nav-pills > li > a {
+	border-radius:0;
+}
+
+#block-views-funder-logos-block {
+	width:45%;
+	float:left;
+}
+

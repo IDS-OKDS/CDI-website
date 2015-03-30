@@ -349,3 +349,13 @@ div.pane-bundle-video .media-vimeo-video, div.pane-bundle-video .media-youtube-v
 	max-width:18%;
 }
 
+.pane-node .node-publication .field-name-field-publication-date  {
+	font-weight:bold;
+	margin-bottom:1em;
+}
+
+.pane-node .node-publication .field-name-field-opendocs-link,
+.pane-node .node-publication .field-name-field-other-resource {
+	margin-bottom:1em;	
+}
+

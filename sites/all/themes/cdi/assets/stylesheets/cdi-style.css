@@ -359,3 +359,8 @@ div.pane-bundle-video .media-vimeo-video, div.pane-bundle-video .media-youtube-v
 	margin-bottom:1em;	
 }
 
+.field-name-field-featured-video {
+	clear:left;
+	position:relative;
+	margin-top:2em;
+}

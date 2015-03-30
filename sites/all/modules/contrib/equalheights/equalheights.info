@@ -1,0 +1,16 @@
+name = Equal Heights
+description = "Adds a jQuery plugin to equalize heights for sets of elements."
+core = 7.x
+configure = admin/config/development/equalheights
+files[] = equalheights.admin.inc
+files[] = equalheights.module
+
+scripts[] = equalheights.js
+
+dependencies[] = libraries (2.x)
+; Information added by  packaging script on 2013-11-22
+version = "7.x-2.3+1-dev"
+core = "7.x"
+project = "equalheights"
+datestamp = "1385083422"
+

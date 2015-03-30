@@ -1,6 +1,7 @@
 /*
 
-Purple #662673
+Old Purple #662673
+New purple #3A1841
 Logo Green #737800
 Murky green #8e9300
 Light green #ecebd9
@@ -39,6 +40,21 @@ Warm grey: #826e6f
 .view-themes-landing .views-row .views-field-name {  font-family: "HouschkaPro-Bold"; font-size: 20px; }
 .front h4.pane-title { font-size: 1.1em; }
 
+
+.view-id-people .views-row { max-width: 20%; width: 20%; margin: 0; overflow: hidden !important;}
+.view-id-people .views-field-title {  background-color: #ecebd9; }
+.view-id-people .views-row-inner {  background-color: #ecebd9; }
+.view-id-people .view-content:before, .view-id-people .view-content:after {content:"";display:block;}
+.view-id-people .view-content:after {clear:both;} 
+.view-people .views-row { padding: 0 !important; }
+.view-id-people .views-row-inner { max-width: auto; width: auto; height: auto; float: left; margin: 5px 5px 5px 5px; padding: 0 !important;  }
+.view-id-people .views-field-field-role {    background-color: #ecebd9;   min-height: inherit; }
+.view-id-people .views-field-title .field-content a { padding: 0px 0px 0px 0px;  display: block; }
+.view-id-people .views-field-title .field-content,
+.view-id-people .views-field-field-role .field-content,
+.view-id-people .views-field-field-organisation .field-content { display: block; padding: 3px 10px;}
+.view-id-people .views-field-field-photo img { width: 100%; }
+
 /* OVERRIDES OF RADIX */
 .navbar {
     border: 0px solid transparent;
@@ -61,7 +77,11 @@ Warm grey: #826e6f
 
 
 
-body { background-color: #eee; font-size: 14px; padding-top: 0px !important;} 
+body { background-color: #eee; font-size: 13px; color: #777; padding-top: 0px !important;} 
+.pane-content .views-field-field-publication-date,
+.pane-content .views-field-created,
+.pane-content .views-field-field-date
+ { color: #3A1841; font-weight: bold;}
 #main-wrapper { background-color: #eee; }
 #header { background-color: #fff; }
 #main-menu { background-color: #8e9300; }
@@ -74,7 +94,7 @@ body { background-color: #eee; font-size: 14px; padding-top: 0px !important;}
 
 
 h1, h2 { color: #8e9300; }
-h4 { color: #662673; font-size: 13px; padding-left: 8px; }
+h4 { color: #3A1841; font-size: 13px; padding-left: 8px; }
 x.pane-content { padding: 10px; }
 
 .front .page-header { display: none; }
@@ -107,7 +127,7 @@ x.pane-content { padding: 10px; }
 
 XXX.panel-pane:not(.pane-views-panes):not(.pane-main-menu) .pane-content {padding: 10px; background-color: #fff;}
 
-h4.pane-title { background-color: #662673; padding: 10px 8px 12px 8px; border-left: 5px solid #737800; color: #fff; font-family: "HouschkaPro-Bold"; font-size: 1.2em; margin: 10px 0 0 0; 
+h4.pane-title { background-color: #3A1841; padding: 10px 8px 12px 8px; border-left: 5px solid #737800; color: #fff; font-family: "HouschkaPro-Bold"; font-size: 1.2em; margin: 10px 0 0 0; 
 background-repeat: no-repeat; background-size: auto 100%; background-position: 100% 0; }
 
 .pane-fpid-5 h4 { background-image: url('../images/icons/video_white.png') } 
@@ -134,7 +154,8 @@ body.node-type-panopoly-news-article h1.title { background-image: url('../images
 /* Views/Content types */
 
 /*.view-display-id-list_news_articles*/  
-
+.view-id-key_contact .views-row,
+.view-people .views-row,
 .view-id-panopoly_projects .views-row,
 .view-id-latest_publications .views-row,
 .view-id-panopoly_publications .views-row,
@@ -143,6 +164,8 @@ body.node-type-panopoly-news-article h1.title { background-image: url('../images
 .view-id-panopoly_news .views-row {
 	padding: 5px 10px 8px 10px;
 }
+.view-id-key_contact .views-row:hover,
+.view-id-people .views-row:hover,
 .view-id-panopoly_projects .views-row:hover,
 .view-id-latest_publications .views-row:hover,
 .view-id-panopoly_publications .views-row:hover,
@@ -151,7 +174,9 @@ body.node-type-panopoly-news-article h1.title { background-image: url('../images
 .view-id-panopoly_news .views-row:hover {
 	background-color: #ecebd9;
 }
-.view-id-panopoly_projects  .views-row .views-field-title a,
+.view-id-key_contact .views-row .views-field-title a,
+.view-id-people .views-row .views-field-title a,
+.view-id-panopoly_projects .views-row .views-field-title a,
 .view-id-latest_publications .views-row .views-field-title a,
 .view-id-panopoly_publications .views-field-title a,
 .view-id-panopoly_events .views-field-title a,
@@ -169,12 +194,12 @@ body.node-type-panopoly-news-article h1.title { background-image: url('../images
 	font-family: "HouschkaPro-Bold"; font-size: 14px;
 }
 ul#superfish-1 > li ul { border: 0; }
-#superfish-1 a:hover { background-color: #662673; text-decoration: none; }
+#superfish-1 a:hover { background-color: #3A1841; text-decoration: none; }
 
 ul#superfish-1 > li > a.sf-depth-1 { background-color: #737800; }
-ul#superfish-1 > li > a.sf-depth-1:hover { background-color: #662673; text-decoration: none;}
+ul#superfish-1 > li > a.sf-depth-1:hover { background-color: #3A1841; text-decoration: none;}
 ul#superfish-1 > li.active-trail > a.sf-depth-1 {
-	background-color: #662673;
+	background-color: #3A1841;
 }
 ul#superfish-1 .nolink { background-color: #826e6f; color: #fff; font-family: "HouschkaPro-Bold";	}
 

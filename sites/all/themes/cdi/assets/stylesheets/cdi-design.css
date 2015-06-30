@@ -9,6 +9,7 @@ Logo Green #737800
 Murky green #8e9300
 Light green #ecebd9
 Warm grey: #826e6f
+Slate grey: #575757;
 */
 
 /* OVERRIDES OF CDI_STYLES */
@@ -93,7 +94,7 @@ body { background-color: #eee; font-size: 13px; color: #777; padding-top: 0px !i
  { color: #3A1841; font-weight: bold;}
 #main-wrapper { background-color: #eee; }
 #header { background-color: #fff; }
-#main-menu { background-color: #8e9300; }
+#main-menu { background-color: #575757; }
 
 
 .panel-pane { background-color: #fff; }
@@ -140,8 +141,12 @@ x.pane-content { padding: 10px; }
 
 XXX.panel-pane:not(.pane-views-panes):not(.pane-main-menu) .pane-content {padding: 10px; background-color: #fff;}
 
-h4.pane-title { background-color: #3A1841; padding: 6px 8px 8px 8px; border-left: 5px solid #737800; color: #fff; font-family: "HouschkaPro-Bold"; font-size: 1.2em; margin: 10px 0 0 0; 
+h4.pane-title { background-color: #575757; padding: 10px 8px 8px 8px; border-left: 5px solid #737800; color: #fff; font-family: "HouschkaPro-Bold"; font-size: 1.2em; margin: 10px 0 0 0; 
 background-repeat: no-repeat; background-size: auto 100%; background-position: 100% 0; }
+
+h4.pane-title a {
+	color:#fff;
+}
 
 .cdi-style-video h4 { xbackground-image: url('../images/icons/video_white_2.png') } 
 .cdi-style-new h4 { background-image: url('../images/icons/new_white_2.png') }
@@ -208,18 +213,18 @@ body.node-type-panopoly-news-article h1.title { background-image: url('../images
 
 /* Menus */
 #superfish-1 { width: 100%; display: block; z-index: 999;}
-#superfish-1 > li > a { border-right: 1px solid #9c9b89 !important; }
+#superfish-1 > li > a { border-right: 1px solid #fff !important; }
 #superfish-1 a {
-	color: #fff; background-color: #737800; padding: 10px 10px; 
+	color: #fff; background-color: #575757; padding: 10px 10px; 
 	font-family: "HouschkaPro-Bold"; font-size: 14px;
 }
 ul#superfish-1 > li ul { border: 0; }
 #superfish-1 a:hover { background-color: #3A1841; text-decoration: none; }
 
-ul#superfish-1 > li > a.sf-depth-1 { background-color: #737800; }
+ul#superfish-1 > li > a.sf-depth-1 { background-color: #575757; }
 ul#superfish-1 > li > a.sf-depth-1:hover { background-color: #3A1841; text-decoration: none;}
 ul#superfish-1 > li.active-trail > a.sf-depth-1 {
-	background-color: #3A1841;
+	background-color: #8e9300;
 }
 ul#superfish-1 .nolink { background-color: #826e6f; color: #fff; font-family: "HouschkaPro-Bold";	}
 
@@ -231,6 +236,13 @@ ul#superfish-1 .nolink { background-color: #826e6f; color: #fff; font-family: "H
 .pane-main-menu a:hover { background-color: #fff; }
 .pane-main-menu li.active a,
 .pane-main-menu li.active > a:hover,
-.pane-main-menu li.active > a:focus { color: #8e9300; background-color: #fff;	}
-.pane-main-menu a.active-trail { color: #737800; background-color: #fff; } 
+.pane-main-menu li.active > a:focus { color: #575757; background-color: #fff;	}
+.pane-main-menu a.active-trail { color: #737800; background-color: #fff; }
+
+ul#superfish-1 > li > a.menuparent {
+	background-image:url('../images/top-nav-open-arrow-pad-8.png');
+	background-position:center right;
+	background-repeat: no-repeat;
+	padding-right:28px;
+}
 

@@ -13,8 +13,17 @@
 	.not-logged-in .navbar-default {
 		margin-top:20px;
 	}
-	.view-footer-partners{
-		width:50%;
+	
+	#block-block-1 .content ul li.conect-title {
+		width:40%;
+	}
+	
+	#block-block-1 .content ul li.conect-content {
+		width:60%;
+	}
+	
+	#block-block-1 .content ul .social-links li {
+		width:25%;
 	}
 	
 	#logo {

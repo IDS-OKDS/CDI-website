@@ -69,7 +69,55 @@ function cdi_field_link($variables) {
   }
 
   return $output . ' ';
+
 }
+function cdi_panopoly_spotlight_view($variables) {
+  $title = $variables['items']['title'];
+  $description = $variables['items']['description'];
+  $link = $variables['items']['link'];
+  $alt = $variables['items']['alt'];
+  $settings = $variables['settings'];
+
+  if (module_exists('uuid')) {
+    $image_entity = entity_uuid_load('file', array($variables['items']['uuid']));
+    $image = file_load(array_pop($image_entity)->fid);
+  }
+  else {
+    $image = (object) $variables['items'];
+  }
+
+  $image_markup = theme('image_style', array('style_name' => $settings['image_style'], 'path' => $image->uri, 'alt' => $alt));
+
+  $output = '<div id="' . 'panopoly-spotlight-' . $variables['delta'] . '" class="' . 'panopoly-spotlight' . '">';
+
+
+ $output .= '<div class="panopoly-spotlight-wrapper">';
+  if (!empty($title)) {
+    $output .= '<h3 class="panopoly-spotlight-label">' . (empty($link) ? check_plain($title) : l($title, $link)) . '</h3>';
+  }
+  if (!empty($description)) {
+    $output .= '<div class="panopoly-spotlight-info">';
+    $output .= '<p>' . $description . '</p>';
+    $output .= '<button class="btn btn-primary">Read more</button >';
+
+    $output .= '</div>';
+  }
+  $output .= '</div>';
+
+  if ($link) {
+    $output .= l($image_markup, $link, array('html' => TRUE, 'attributes'=> array('class'=>'clearfix')));
+  }
+  else {
+    $output .= $image_markup;
+  }
+
+ 
+  $output .= '</div>';
+
+  return $output;
+}
+
+
 
 
 

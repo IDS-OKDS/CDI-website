@@ -8,7 +8,13 @@
 */
 
 h1, h2, h3 { font-family: "HouschkaPro-Bold"; }
+
 h4 { font-family: "HouschkaPro-Medium"; }
+
+.btn, .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-family: "HouschkaPro-Bold", "Open Sans","Lucida Grande",Tahoma,Verdana,sans-serif;
+  font-size: 0.8em;
+}
 
 a {
 	color: #aca902;
@@ -21,8 +27,8 @@ a:hover {
 
 .btn-primary {
 	color: #fff;
-	background-color: #786d6b;
-	border-color: #786d6b;
+	background-color: #3A1841;
+	border-color: #3A1841;
 }
 
 .btn-primary:hover {
@@ -364,3 +370,4 @@ div.pane-bundle-video .media-vimeo-video, div.pane-bundle-video .media-youtube-v
 	position:relative;
 	margin-top:2em;
 }
+

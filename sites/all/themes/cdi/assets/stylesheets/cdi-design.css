@@ -1,3 +1,6 @@
+html.js #navbar-administration {
+    display: none;}
+
 /*
 
 Old Purple #662673
@@ -19,6 +22,7 @@ Warm grey: #826e6f
     margin: 0em 0;
     padding: 0em;
 }
+
 #footer-region {background-color: #000; padding: 20px;}
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
@@ -26,6 +30,7 @@ Warm grey: #826e6f
   color: #826e6f;
   background-color: inherit;
 }
+
 .nav-pills .nolink {display: block; background-color: #826e6f; color: #fff; padding: 8px; font-family: "HouschkaPro-Bold"; }
 .pane-menu-tree .dropdown-menu { z-index: 400; }
 .view-themes-landing .views-row {
@@ -60,22 +65,26 @@ Warm grey: #826e6f
     border: 0px solid transparent;
     margin-bottom: 0px;
 }
+
+
+.pane-bundle-spotlight .panopoly-spotlight { background-color: #eee; }
+.pane-bundle-spotlight .panopoly-spotlight > a {display: block; position: relative; }
+
+.pane-bundle-spotlight .panopoly-spotlight img {	width: 50%; float: left; }
+.pane-bundle-spotlight .panopoly-spotlight-wrapper { position: absolute; width: 50%; bottom: 0; left: 50%; }
+.pane-bundle-spotlight .pane-content { background: url('../images/box-bg.png') right bottom no-repeat #fff; }
+.pane-bundle-spotlight .ui-widget-content .panopoly-spotlight-label a {
+    width: 100%;
+    color: #8e9300;
+}
 .pane-bundle-spotlight .panopoly-spotlight-info {
-    background-color: #826e6f;
-    color: #ffffff; font-size: 18px;
+    background-color: transparent; 
+    font-size: 18px;
+    color: #333;
     opacity: 0.9;
     padding: 1em 0.7em;
 }
-.pane-bundle-spotlight .panopoly-spotlight-label {
-    padding: 6px 8px;
-    background-color: #ecebd9;
-    max-width: 85%;
-    opacity: 0.8;
-    width: 75%;
-    color: #444;
-}
-
-
+.pane-bundle-spotlight .ui-widget button { font-size: 14px; margin-top: 10px; }
 
 body { background-color: #eee; font-size: 13px; color: #777; padding-top: 0px !important;} 
 .pane-content .views-field-field-publication-date,
@@ -85,7 +94,10 @@ body { background-color: #eee; font-size: 13px; color: #777; padding-top: 0px !i
 #main-wrapper { background-color: #eee; }
 #header { background-color: #fff; }
 #main-menu { background-color: #8e9300; }
+
+
 .panel-pane { background-color: #fff; }
+.panel-pane .pane-content { padding: 10px; }
 
 .not-front #page-header { padding: 10px 10px 0px 10px; background-color: #fff; }
 .navbar-collapse { padding: 0; }
@@ -99,13 +111,13 @@ x.pane-content { padding: 10px; }
 
 .front .page-header { display: none; }
 
-.pane-fpid-4 { padding: 20px 15%; }
+.pane-fpid-4 { padding: 30px 18%; }
 .pane-fpid-4 p {
-	text-transform: uppercase;
+	xtext-transform: uppercase;
 	text-align: center;
 	font-family: "HouschkaPro-Bold"; 
 	color: #777;
-	font-size: 16px;
+	font-size: 18px;
 }
 .pane-fpid-4 p span { color: #737800; }
 .pane-fpid-4.panel-pane, 
@@ -117,6 +129,7 @@ x.pane-content { padding: 10px; }
 .radix-layouts-content .pane-node,
 .radix-layouts-content .pane-bundle-text,
 .radix-layouts-content .pane-fieldable-panels-pane,
+.radix-layouts-contentheader .pane-taxonomy-term,
 .radix-layouts-content .pane-taxonomy-term,
 .radix-layouts-content .pane-entity-field,
 .radix-layouts-contentheader .pane-entity-field,
@@ -127,24 +140,31 @@ x.pane-content { padding: 10px; }
 
 XXX.panel-pane:not(.pane-views-panes):not(.pane-main-menu) .pane-content {padding: 10px; background-color: #fff;}
 
-h4.pane-title { background-color: #3A1841; padding: 10px 8px 12px 8px; border-left: 5px solid #737800; color: #fff; font-family: "HouschkaPro-Bold"; font-size: 1.2em; margin: 10px 0 0 0; 
+h4.pane-title { background-color: #3A1841; padding: 6px 8px 8px 8px; border-left: 5px solid #737800; color: #fff; font-family: "HouschkaPro-Bold"; font-size: 1.2em; margin: 10px 0 0 0; 
 background-repeat: no-repeat; background-size: auto 100%; background-position: 100% 0; }
 
-.pane-fpid-5 h4 { background-image: url('../images/icons/video_white.png') } 
-.pane-fpid-3 h4 { background-image: url('../images/icons/new_white.png') }
-.pane-panopoly-publications-list-publications h4 { background-image: url('../images/icons/publication_white.png') } 
-.pane-panopoly-news-list-news-articles h4 { background-image: url('../images/icons/news_white.png') } 
-.pane-panopoly-blogs-list-blog-posts h4 { background-image: url('../images/icons/blog_white.png') } 
-.pane-panopoly-events-list-events h4 { background-image: url('../images/icons/event_white.png') } 
+.cdi-style-video h4 { xbackground-image: url('../images/icons/video_white_2.png') } 
+.cdi-style-new h4 { background-image: url('../images/icons/new_white_2.png') }
+.pane-panopoly-publications-list-publications h4,
+.cdi-style-publication h4 { background-image: url('../images/icons/publication_white_2.png') } 
+.pane-panopoly-news-list-news-articles h4,
+.cdi-style-news h4 { background-image: url('../images/icons/news_white_2.png') } 
+.pane-panopoly-blogs-list-blog-posts h4,
+.cdi-style-blog h4 { background-image: url('../images/icons/blog_white_2.png') } 
+.pane-panopoly-events-list-events h4,
+.cdi-style-event h4 { background-image: url('../images/icons/event_white_2.png') } 
+
 
 
 h1.title { padding-right: 44px; background-repeat: no-repeat; xbackground-size: auto 100%; background-position: 100% 0; }
-body.node-type-publication h1.title { background-image: url('../images/icons/publication_white.png') } 
-body.node-type-event h1.title { background-image: url('../images/icons/event_white.png') } 
-body.node-type-blog h1.title { background-image: url('../images/icons/blog_white.png') } 
-body.node-type-panopoly-news-article h1.title { background-image: url('../images/icons/news_white.png') } 
+body.node-type-publication h1.title { background-image: url('../images/icons/publication_white_2.png') } 
+body.node-type-event h1.title { background-image: url('../images/icons/event_white_2.png') } 
+body.node-type-blog h1.title { background-image: url('../images/icons/blog_white_2.png') } 
+body.node-type-panopoly-news-article h1.title { background-image: url('../images/icons/news_white_2.png') } 
 
-
+.dropdown-menu > li > a {
+    white-space: normal;
+}
 
 
 .fluid-width-video-wrapper { position: unset !important; }
@@ -182,7 +202,7 @@ body.node-type-panopoly-news-article h1.title { background-image: url('../images
 .view-id-panopoly_events .views-field-title a,
 .view-id-panopoly_blogs .views-field-title a,
 .view-id-panopoly_news .views-field-title a { 
-	font-family: "HouschkaPro-Bold"; color: #737800; font-size: 15px;
+	font-family: "HouschkaPro-Bold"; color: #737800; font-size: 16px;
 }
 
 

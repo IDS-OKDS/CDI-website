@@ -2,7 +2,6 @@ name = CDI
 description = This is a sub-theme of theme Radix, by KSS for CDI
 core = 7.x
 base theme = radix
-stylesheets[all][]     = assets/stylesheets/cdi-style.css
 stylesheets[all][]     = assets/stylesheets/cdi-style-media-768.css
 stylesheets[all][]     = assets/stylesheets/cdi-style-media-992.css
 stylesheets[all][]     = assets/stylesheets/cdi-style-media-1200.css
@@ -12,6 +11,7 @@ stylesheets[all][]     = assets/stylesheets/cdi-design.css
 
 ; Javascript
 scripts[] = assets/javascripts/compact_forms.js
+scripts[] = assets/javascripts/cdi-script.js
 
 ; Regions
 regions[content] = Content
